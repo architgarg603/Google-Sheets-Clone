@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cedarville+Cursive&family=Courgette&family=Courier+Prime:ital@0;1&family=Dancing+Script:wght@500&family=Gloria+Hallelujah&family=Oswald:wght@300&family=Overpass+Mono&family=Peddana&family=Roboto:wght@100&family=Rubik:ital,wght@0,300;1,500&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="menuBar">
+        <img src="./img/logo.gif" alt="" style="height: 40px; width: 55px; margin-left: 15px;">
+        <div class="file">File</div>
+        <div class="home">Home</div>
+    </div>
+
+    <div class="menuOptions">
+        <div class="fileOptions active">
+
+            <div class="new">New</div>
+            <div class="open">Open</div>
+            <div class="save">Save</div>
+
+        </div>
+        <div class="homeOptions ">
+
+            <div class="formatting">
+                <div class="fontName">
+                    <select name="font" id="font" onclick="event.stopPropagation();">
+                        <option value="arial" style="font-family: 'arial'">Arial</option>
+                        <option value="'Caveat', cursive" style="font-family: 'Caveat', cursive;">Caveat</option>
+                        <option value="'Cedarville Cursive', cursive"
+                            style="font-family: 'Cedarville Cursive', cursive;">Cedarville</option>
+                        <option value="'Courgette', cursive" style="font-family: 'Courgette', cursive;">Courgette
+                        </option>
+                        <option value='Courier Prime' , monospace"" style="font-family:'Courier Prime', monospace ;">
+                            Courier Prime</option>
+                        <option value="'Dancing Script', cursive" style="font-family: 'Dancing Script', cursive;">
+                            Dancing Script</option>
+                        <option value="'Gloria Hallelujah', cursive" style="font-family:'Gloria Hallelujah', cursive ;">
+                            Gloria Hallelujah</option>
+                        <option value="'Oswald', sans-serif" style="font-family:'Oswald', sans-serif ;">Oswald</option>
+                        <option value="Overpass Mono', monospace" style="font-family:'Overpass Mono', monospace ;">
+                            Overpass Mono</option>
+                        <option value="'Peddana', serif" style="font-family: 'Peddana', serif;">Peddana</option>
+                        <option value="'Roboto', sans-serif" style="font-family:'Roboto', sans-serif ;">Roboto</option>
+                        <option value="'Rubik', sans-serif" style="font-family:'Rubik', sans-serif ;">Rubik</option>
+                        <option value="'Yellowtail', cursive" style="font-family:'Yellowtail', cursive ;">Yellowtail
+                        </option>
+                    </select>
+                </div>
+                <div class="fontStyler">
+                    <div id="bold" style="font-weight: bold;">B</div>
+                    <div id="underline" style="text-decoration: underline;">U</div>
+                    <div id="italic" style="font-style: italic;">I</div>
+                </div>
+            </div>
+            <div class="style">
+                <div class="font-size">
+                    <select name="fontsize" id="fontsize">
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                        <option value="32">32</option>
+                    </select>
+                </div>
+                <div class="color">
+                    <div class="textcolor">
+                        <label for="fontcolor" class="fontColor"><i class="fas fa-font"></i></label>
+                        <input type="color" name="fontcolor" id="fontcolor">
+                    </div>
+                    <div class="backcolor">
+                        <label for="cellcolor" class="cellColor"><i class="fas fa-highlighter"></i></label>
+                        <input type="color" name="cellcolor" id="cellcolor">
+                    </div>
+                </div>
+            </div>
+            <div class="alignment">
+                <div class="left flex-start"><i class="fas fa-align-left"></i></div>
+                <div class="centers center"><i class="fas fa-align-center"></i></div>
+                <div class="right flex-end"><i class="fas fa-align-right"></i></div>
+            </div>
+            <div class="vAlignment">
+                <div class="topAlign flex-start"><i class="fas fa-align-justify"></i></div>
+                <div class="centerAlign center"><i class="fas fa-align-justify"></i></div>
+                <div class="bottomAlign flex-end"><i class="fas fa-align-justify"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="formula">
+        <img src="./img/fx.png" alt="fx" style="height: 27px; width: 27px;">
+        <div class="address">
+            <input type="text" class="addressInput" readonly placeholder="Adress">
+        </div>
+        <div class="addFormula">
+            <input type="text" class="FormulaInput" placeholder="Write Formula">
+        </div>
+    </div>
+    <div class="prompt">
+        <div class="wrapper">
+            <img src="./popup.JPG" class="promptImg" alt="">
+            <div class="okBtn">OK</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="topLeft">
+
+        </div>
+        <div class="leftMost">
+            <% for(let i=0;i<100;i++) {%>
+                <div class="leftMostCell" r-Id=<%=i%>><%=i+1%>
+                </div>
+                <%}%>
+        </div>
+        <div class="topMost">
+            <% for(let i=0;i<26;i++) {%>
+                <div class="topMostCell" c-Id=<%=i%>><%= String.fromCharCode(i+65)%>
+                </div>
+                <%}%>
+        </div>
+        <div class="cells">
+            <% for(let i=0;i<100;i++) { %>
+                <div class="rows">
+                    <% for(let j=0;j<26;j++) { %>
+
+                        <div class="cell" id="cell" r-Id=<%=i%> c-Id=<%=j%> contenteditable = "true">
+                        </div>
+
+                        <%}%>
+                </div>
+                <%}%>
+
+        </div>
+    </div>
+
+    <div class="sheets">
+        <div class="addBtn addSheet">
+            <i class="fas fa-plus"></i>
+        </div><span class="sheet " sheetIdx='0'>Sheet 1</span>
+    </div>
+    <script src="./stack.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
