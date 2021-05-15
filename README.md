@@ -1,10 +1,10 @@
 <h1 align="center">
-  Excel Clone
+  Google Sheets CLone
 </h1>
 
 # Description:
 
-### Excl clone is built using electron framework with technologies such as HTML CSS JQuery and Ejs as a templating engine .
+### Sheets clone is built using electron framework with technologies such as HTML CSS Javascript and Ejs as a templating engine .
 ### Some features of this project are -
 - Change Cell size
 - Cycle Detection in formula
