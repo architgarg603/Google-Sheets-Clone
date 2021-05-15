@@ -1,5 +1,5 @@
 <h1 align="center">
-  Google Sheets CLone
+  Google Sheets Clone
 </h1>
 
 # Description:
